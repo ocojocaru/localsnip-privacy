@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>LocalSnip — Privacy Policy</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 640px; margin: 40px auto; padding: 0 20px; color: #1f2937; line-height: 1.6; }
+  h1 { font-size: 22px; }
+  h2 { font-size: 16px; margin-top: 28px; }
+  .updated { color: #6b7280; font-size: 13px; }
+  code { background: #f3f4f6; padding: 1px 5px; border-radius: 4px; font-size: 13px; }
+</style>
+</head>
+<body>
+  <h1>LocalSnip — Privacy Policy</h1>
+  <p class="updated">Last updated: September 12, 2026</p>
+  <p>LocalSnip is a product developed and sold by Ovidiu Cojocaru, an individual seller based in Romania.</p>
+
+  <p><strong>Short version: LocalSnip does not collect, transmit, or store any of your data anywhere except your own browser.</strong> There is no server, no account, no analytics, and no tracking of any kind built into this extension.</p>
+
+  <h2>What LocalSnip stores</h2>
+  <p>The snippets you create (your triggers and the text they expand into) are saved using Chrome's built-in <code>chrome.storage.local</code> API. This data lives only on your own device, inside your own Chrome profile. It is never sent to LocalSnip's developer, to any third-party server, or to any analytics service — because no such server or service exists in this extension.</p>
+
+  <h2>What LocalSnip can see</h2>
+  <p>To detect when you type a trigger, LocalSnip's content script runs on web pages you visit and watches text you type into input fields, text areas, and editable regions. This happens entirely inside your browser. Nothing you type — including text that isn't a snippet trigger — is transmitted anywhere, logged, or stored, beyond the browser's own normal, local operation of the page.</p>
+
+  <h2>Clipboard access</h2>
+  <p>If you use the optional <code>{clipboard}</code> placeholder in a snippet, LocalSnip reads your current clipboard contents at the moment of expansion, using the standard browser Clipboard API, purely to insert that text into the snippet. This value is not stored or transmitted anywhere.</p>
+
+  <h2>Data export</h2>
+  <p>The "Export to file" feature in the options page creates a plain <code>.json</code> file containing your snippets and saves it to your own computer using your browser's normal file-download mechanism. This file goes directly from your browser to your disk — it does not pass through any server operated by LocalSnip.</p>
+
+  <h2>Payments</h2>
+  <p>If you unlock the paid version, payment is processed by ExtensionPay and Stripe. LocalSnip's developer never receives or stores your card details — see <a href="https://extensionpay.com/privacy">ExtensionPay's own privacy policy</a> for how they handle payment data. ExtensionPay does store your email address and payment status so that your unlock can be recognized if you reinstall the extension or use it in another browser.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes, the updated version will be posted at this same URL with a new "last updated" date.</p>
+
+  <h2>Contact</h2>
+  <p>LocalSnip is operated by Ovidiu Cojocaru. For privacy questions, contact: <a href="mailto:ocojocaru@gmail.com">ocojocaru@gmail.com</a></p>
+</body>
+</html>
